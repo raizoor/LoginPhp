@@ -1,0 +1,24 @@
+<!doctype html>
+<html  lang="pt-br">
+    <header>
+        <title>Login</title>
+        <h1>
+            Tela de login
+        </h1>
+    </header>
+    <body>
+        <form action="validaLogin.php" method="POST">
+            <fieldset>
+                <legend> Realize seu login </legend>
+                <label>Usuário</label>
+                <input type="text" name="login" maxlength="40" required>
+                <br>
+                <label>Senha</label>
+                <input type="password" name="password" required>
+                <br>
+            <input type="submit" value="Continuar">
+            <input type="reset" value="Limpar">
+            <button type="button" onclick="window.location.href='cadastro.html'"> Cadastrar
+        </form>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html  lang="pt-br">
+    <header>
+        <title>Cadastro</title>
+        <h1>
+            Tela de cadastro
+        </h1>
+    </header>
+    <body>
+        <form action="cadastro.php" method="POST">
+            <fieldset>
+                <legend> Infos Cadastrais </legend>
+                <label>Nome :</label>
+                <input type="text" name="nome" maxlength="18" required>
+                <br>
+                <label>Email :</label>
+                <input type="email" name="email" required>
+                <br>
+                <label>Login :</label>
+                <input type="login" name="login" required>
+                <br>
+                <label> Password :</label>
+                <input type="password" name="password" maxlength="14" required>
+                <br>
+                <p>Sexo :</p> 
+                <label>Masculino</label>
+                <input type="radio" name="sexo" value="Masculino" required>
+                <label>Feminino</label>
+                <input type="radio" name="sexo" value="Feminino">
+                <label>Outros</label>
+                <input type="radio" name="sexo" value="Outros">
+                <br>
+                <label>Perfil de usuário</label>
+                <select name="perfil" required>
+                    <option> Administrador </option>
+                    <option> Colaborador </option>
+                    <option> Cliente </option>
+                </select>
+            <br>
+            <input type="submit" value="Finalizar cadastro">
+            <input type="reset" value="reset">
+        </form>
+    </body>
+</html>
